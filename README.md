@@ -1,2 +1,2 @@
-# lab-vba
+# VBA
 Learning VBA
