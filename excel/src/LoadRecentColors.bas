@@ -1,6 +1,6 @@
-Sub LoadRecentColors()
-'	Purpose: Use A List Of RGB Codes To Load Colors Into Recent Colors Section of Color Palette
-'	Reference: www.TheSpreadsheetGuru.com/the-code-vault
+Sub LoadRecentColors(control As IRibbonControl)
+'   Purpose: Use A List Of RGB Codes To Load Colors Into Recent Colors Section of Color Palette
+'   Reference: www.TheSpreadsheetGuru.com/the-code-vault
 '   Updated: 2022FEB25
 
 '   Saves workbook before macro changes
@@ -38,3 +38,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

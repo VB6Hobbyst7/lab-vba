@@ -1,4 +1,4 @@
-Sub FormulaRound()
+Sub FormulaRound(control As IRibbonControl)
 '   Purpose: Convert selected values to absolute
 '   Updated: 2022FEB25
 
@@ -26,3 +26,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

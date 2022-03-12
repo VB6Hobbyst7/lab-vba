@@ -1,14 +1,13 @@
-Sub InsertHeadingTax()
+Sub InsertHeadingTax(control As IRibbonControl)
 '   Purpose: Insert customised headings for tax workpapers
 '   Note: Utilises CCH Engagement functions
 '   Updated: 2022FEB25
 
 '   Saves workbook before macro changes
+    Application.ScreenUpdating = False
     On Error GoTo ErrorHandler
     ActiveWorkbook.Save
-
-    Application.ScreenUpdating = False
-
+    
     Dim rng As Range
     Dim myClient As String
     Dim myYear As String
@@ -17,7 +16,7 @@ Sub InsertHeadingTax()
     myClient = "=UPPER(PJNAME())"
 
     myYear = "=" & Chr(34) & "YEAR OF ASSESSMENT " & Chr(34) & "&"
-    myYear = myYear & "UPPER(TEXT(" & "CYBDATE()+1" & "," & Chr(34) & "yyyy" & Chr(34)
+    myYear = myYear & "UPPER(TEXT(" & "CYBDATE()+365*2" & "," & Chr(34) & "yyyy" & Chr(34)
     myYear = myYear & "))"
 
     If rng.HasFormula = True Then
@@ -43,10 +42,11 @@ Sub InsertHeadingTax()
     
     rng.Font.Bold = True
     rng.Offset(1, 0).Font.Bold = True
-
+    
     Application.ScreenUpdating = True
-
+        
 ErrorHandler:
     Exit Sub
 
 End Sub
+

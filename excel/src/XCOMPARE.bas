@@ -1,4 +1,4 @@
-Public Function XCOMPARE(target As Range, reference As Range) As String
+Function XCOMPARE(target As Range, reference As Range) As String
 '   Purpose: Return the difference between two cells by words
 '   Usage: =XCOMPARE(target cell, reference cell)
 '   Examples: =XCOMPARE(cellA, cellB)
@@ -30,3 +30,4 @@ Public Function XCOMPARE(target As Range, reference As Range) As String
     XCOMPARE = Trim(strTemp)
 
 End Function
+

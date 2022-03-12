@@ -1,4 +1,4 @@
-Sub FormulaAbsoluteReference()
+Sub FormulaAbsoluteReference(control As IRibbonControl)
 '   Purpose: Absolute reference selected cells
 '   Reference: http://www.excelforum.com/excel-general/372383-making-multiple-cells-absolute-at-once.html
 '   Reference: http://www.contextures.com/xlvba01.html#videoreg
@@ -9,12 +9,12 @@ Sub FormulaAbsoluteReference()
     On Error GoTo ErrorHandler
     ActiveWorkbook.Save
 
-    Dim Cell As Range
+    Dim cell As Range
     
-    For Each Cell In Selection
-        If Cell.HasFormula Then
-            Cell.Formula = _
-            Application.ConvertFormula(Cell.Formula, xlA1, xlA1, xlAbsolute)
+    For Each cell In Selection
+        If cell.HasFormula Then
+            cell.Formula = _
+            Application.ConvertFormula(cell.Formula, xlA1, xlA1, xlAbsolute)
         End If
     Next
  
@@ -22,3 +22,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

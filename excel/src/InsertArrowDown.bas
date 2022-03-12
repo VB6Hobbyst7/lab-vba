@@ -1,4 +1,4 @@
-Sub InsertArrowDown()
+Sub InsertArrowDown(control As IRibbonControl)
 '   Purpose: Draw line down
 '   Updated: 2022FEB25
 
@@ -66,3 +66,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

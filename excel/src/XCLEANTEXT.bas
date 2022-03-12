@@ -1,17 +1,17 @@
-Public Function XCLEANTEXT(text As String)
-'	Purpose: Removes excess non-alphanumeric characters
-'	Usage: =LEN(B3)-LEN(SUBSTITUTE(B3,C3,))
-'	Feature: To count number of delimiter 
+Function XCLEANTEXT(text As String)
+'   Purpose: Removes excess non-alphanumeric characters
+'   Usage: =LEN(B3)-LEN(SUBSTITUTE(B3,C3,))
+'   Feature: To count number of delimiter
 '   Updated: 2022FEB23
 
 '   Saves workbook before macro changes
     ActiveWorkbook.Save
 
-' 	Remove leading and training symbols
+'   Remove leading and training symbols
     text = REMOVESYMBOLS(text, LEAD)
     text = REMOVESYMBOLS(text, TRAIL)
 
-'	Replace hanging double quotation marks
+'   Replace hanging double quotation marks
     Dim m As Integer
 
     For m = 1 To Len(text)
@@ -26,10 +26,11 @@ Public Function XCLEANTEXT(text As String)
             End If
         End If
     Next m
-' 	Double spacing
-    text = WorksheetFunction.Substitute(text, "  ", "")  
-'	Comma
-    text = WorksheetFunction.Substitute(text, ",", "")   
+'   Double spacing
+    text = WorksheetFunction.Substitute(text, "  ", "")
+'   Comma
+    text = WorksheetFunction.Substitute(text, ",", "")
     XCLEANTEXT = Trim(text)
 
 End Function
+

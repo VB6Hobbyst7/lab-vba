@@ -1,4 +1,4 @@
-Sub RemoveBlankCells(Rib As IRibbonControl)
+Sub RemoveBlankCells(control As IRibbonControl)
 '   Purpose: Remove blank cells in selection
 '   Updated: 2022FEB25
 
@@ -17,9 +17,12 @@ Sub RemoveBlankCells(Rib As IRibbonControl)
         End If
     End If
     
+    Selection.Cells(1, 1).Select
+    
     Application.ScreenUpdating = True
     
 ErrorHandler:
     Exit Sub
 
 End Sub
+

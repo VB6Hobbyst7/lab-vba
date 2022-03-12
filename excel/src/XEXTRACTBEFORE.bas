@@ -1,4 +1,4 @@
-Public Function XEXTRACTBEFORE(rngWord As Range, strWord As String) As String
+Function XEXTRACTBEFORE(rngWord As Range, strWord As String) As String
 '   Purpose: Extract the leading text before a specific word
 '   Usage: =XETRACTBEFORE(cellA,"word")
 '   Updated: 2022FEB23
@@ -32,3 +32,4 @@ ExtractBefore_Error:
     XEXTRACTBEFORE = Err.Description
 
 End Function
+

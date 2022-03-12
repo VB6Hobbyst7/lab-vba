@@ -1,4 +1,4 @@
-Sub SheetColumnsNTA6X()
+Sub SheetColumnsNTA6X(control As IRibbonControl)
 '   Purpose: Standardise columns width for specific worksheet: NTA 6-columns tab
 '   Updated: 2022FEB25
 
@@ -8,23 +8,23 @@ Sub SheetColumnsNTA6X()
 
     Dim ws As Worksheet
     Set ws = ActiveSheet
-    Columns.COLUMNWIDTH = 14
-    Columns("A").COLUMNWIDTH = 3
-    Columns("B").COLUMNWIDTH = 3
-    Columns("C").COLUMNWIDTH = 10
-    Columns("D").COLUMNWIDTH = 15
-    Columns("E").COLUMNWIDTH = 11
-    Columns("F").COLUMNWIDTH = 1
-    Columns("G").COLUMNWIDTH = 5
-    Columns("H").COLUMNWIDTH = 1
-    Columns("I").COLUMNWIDTH = 5
-    Columns("J").COLUMNWIDTH = 1
-    Columns("K").COLUMNWIDTH = 10
-    Columns("L").COLUMNWIDTH = 1
-    Columns("M").COLUMNWIDTH = 10
-    Columns("N").COLUMNWIDTH = 1
-    Columns("O").COLUMNWIDTH = 1
-    Columns("P").COLUMNWIDTH = 1
+    Columns.ColumnWidth = 14
+    Columns("A").ColumnWidth = 3
+    Columns("B").ColumnWidth = 3
+    Columns("C").ColumnWidth = 10
+    Columns("D").ColumnWidth = 15
+    Columns("E").ColumnWidth = 11
+    Columns("F").ColumnWidth = 1
+    Columns("G").ColumnWidth = 5
+    Columns("H").ColumnWidth = 1
+    Columns("I").ColumnWidth = 5
+    Columns("J").ColumnWidth = 1
+    Columns("K").ColumnWidth = 10
+    Columns("L").ColumnWidth = 1
+    Columns("M").ColumnWidth = 10
+    Columns("N").ColumnWidth = 1
+    Columns("O").ColumnWidth = 1
+    Columns("P").ColumnWidth = 1
     Columns("O").Interior.Color = RGB(217, 217, 217)
     Columns("A:N").Font.Name = "Times New Roman"
     Columns("A:N").Font.Size = 10
@@ -59,3 +59,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

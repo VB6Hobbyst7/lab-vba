@@ -1,4 +1,4 @@
-Sub WorkbookResetStyles()
+Sub WorkbookResetStyles(control As IRibbonControl)
 '   Purpose: Removes all styles in the active workbook and rebuild the default styles
 '   Reference: https://support.microsoft.com/en-us/topic/how-to-programmatically-reset-a-workbook-to-default-styles-36e94af7-d185-68fb-3962-0882a5260132
 '   Note: Rebuilds the default styles by merging them from a new workbook
@@ -52,3 +52,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

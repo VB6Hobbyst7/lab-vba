@@ -1,4 +1,4 @@
-Sub FormatAccounting()
+Sub FormatAccounting(control As IRibbonControl)
 '   Purpose: Set accounting number format on selected range
 '   Updated: 2022FEB25
 
@@ -21,3 +21,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

@@ -1,4 +1,4 @@
-Sub WorkbookPageBreakOff()
+Sub WorkbookPageBreakOff(control As IRibbonControl)
 '   Purpose: This removes all page breaks for all worksheets in the workbook
 '   Reference: www.DedicatedExcel.com
 '   Updated: 2022FEB25
@@ -22,3 +22,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

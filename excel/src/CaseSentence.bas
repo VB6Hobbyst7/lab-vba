@@ -1,4 +1,4 @@
-Sub CaseSentence()
+Sub CaseSentence(control As IRibbonControl)
 '   Purpose: Set sentence case on selection
 '   Reference: KuTools
 '   Updated: 2022FEB25
@@ -42,3 +42,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

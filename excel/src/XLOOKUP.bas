@@ -1,4 +1,4 @@
-Public Function XLOOKUP(text As Variant, targetList As Range, resultList As Variant, Optional errResult As Variant)
+Function XLOOKUP(text As Variant, targetList As Range, resultList As Variant, Optional errResult As Variant)
 '   Purpose: Custom XLOOKUP
 '   Usage 01: =XLOOKUP(A1, A1:A10, B1:B10)
 '   Usage 02: =XLOOKUP(A1, A1:A10, "True", "False")
@@ -11,12 +11,12 @@ Public Function XLOOKUP(text As Variant, targetList As Range, resultList As Vari
 
 '   Saves workbook before macro changes
     ActiveWorkbook.Save
-
+    
     Application.ScreenUpdating = False
     On Error GoTo XLOOKUP_Error
     
     If TypeName(resultList) = "Range" Then
-        XLOOKUP = WorksheetFunction.Index(resultList, WorksheetFunction.Match(text, targetList, 0))
+        XLOOKUP = WorksheetFunction.index(resultList, WorksheetFunction.Match(text, targetList, 0))
     Else
         If IsError(WorksheetFunction.Match(text, targetList, 0)) Then
             GoTo XLOOKUP_Error
@@ -39,3 +39,4 @@ XLOOKUP_Error:
     Resume Next
     
 End Function
+

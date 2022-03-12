@@ -1,4 +1,4 @@
-Public Function XFIND(text As Range, wordList As Range)
+Function XFIND(text As Range, wordList As Range)
 '   Purpose: Return the matched words from text description based on a word list
 '   Requirement: Microsoft VBScript Regular Expressions 5.5
 '   Usage: =XFIND(text, wordlist)
@@ -67,3 +67,4 @@ Public Function XFIND(text As Range, wordList As Range)
     XFIND = result
 
 End Function
+

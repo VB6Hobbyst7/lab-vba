@@ -1,4 +1,4 @@
-Public Function XEXTRACTAFTER(rngWord As Range, strWord As String) As String
+Function XEXTRACTAFTER(rngWord As Range, strWord As String) As String
 '   Purpose: Extract the trailing text after a specific word
 '   Usage: =XETRACTAFTER(cellA,"word")
 '   Updated: 2022FEB23
@@ -34,3 +34,4 @@ ExtractAfter_Error:
     XEXTRACTAFTER = Err.Description
 
 End Function
+

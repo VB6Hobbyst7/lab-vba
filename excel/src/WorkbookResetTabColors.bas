@@ -1,4 +1,4 @@
-Sub WorkbookResetTabColors()
+Sub WorkbookResetTabColors(control As IRibbonControl)
 '   Purpose: Reset all tab colors
 '   Reference: https://www.extendoffice.com/documents/excel/5179-excel-remove-tab-color.html
 '   Updated: 2022FEB25
@@ -17,3 +17,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

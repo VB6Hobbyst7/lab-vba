@@ -1,4 +1,4 @@
-Sub CellTrim()
+Sub CellTrim(control As IRibbonControl)
 '   Purpose: Trim spaces in cell
 '   Updated: 2022FEB25
 
@@ -16,3 +16,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

@@ -1,10 +1,11 @@
-Public Function XIFDATE(rCell As Range) As String
-'	Purpose: Check if it is date
+Function XIFDATE(rCell As Range) As String
+'   Purpose: Check if it is date
 '   Updated: 2022FEB23
 
 '   Saves workbook before macro changes
     ActiveWorkbook.Save
     
-    XIFDATE = ISDATE(rCell)
+    XIFDATE = IsDate(rCell)
 
 End Function
+

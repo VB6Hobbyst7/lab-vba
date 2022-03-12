@@ -1,6 +1,6 @@
-Public Function XREMOVESYMBOLS(text As String, opType As String, Optional charCount)
-'	Purpose: Substitute a leading symbol
-'	Feature: By default leading 3 characters are considered if not specified
+Function XREMOVESYMBOLS(text As String, opType As String, Optional charCount)
+'   Purpose: Substitute a leading symbol
+'   Feature: By default leading 3 characters are considered if not specified
 '   Updated: 2022FEB23
 
 '   Saves workbook before macro changes
@@ -33,3 +33,4 @@ Public Function XREMOVESYMBOLS(text As String, opType As String, Optional charCo
     XREMOVESYMBOLS = Trim(text)
 
 End Function
+

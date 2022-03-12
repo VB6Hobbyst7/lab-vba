@@ -1,4 +1,4 @@
-Sub FormatLineDotted()
+Sub FormatLineDotted(control As IRibbonControl)
 '   Purpose: Insert dotted line
 '   Updated: 2022FEB25
 
@@ -27,3 +27,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

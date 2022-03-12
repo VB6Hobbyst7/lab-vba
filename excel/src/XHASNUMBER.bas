@@ -1,4 +1,4 @@
-Public Function XHASNUMBER(target As Range)
+Function XHASNUMBER(target As Range)
 '   Purpose: Check if there are numbers in a text
 '   Usage: =XHASNUMBER(target cell)
 '   Alternative: =COUNT(FIND({0,1,2,3,4,5,6,7,8,9},A1))
@@ -19,3 +19,4 @@ Public Function XHASNUMBER(target As Range)
     Next i
     
 End Function
+

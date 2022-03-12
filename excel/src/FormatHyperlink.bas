@@ -1,4 +1,4 @@
-Sub FormatHyperlink()
+Sub FormatHyperlink(control As IRibbonControl)
 '   Purpose: Converts a range of text hyperlink selected into a working hyperlink
 '   Note: Uses built-in hyperlink() function
 '   Reference: https://superuser.com/questions/580387/how-to-turn-plain-text-links-into-hyperlinks-in-excel

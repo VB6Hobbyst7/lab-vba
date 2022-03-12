@@ -1,4 +1,4 @@
-Public Function XSUBSTITUTESUFFIX(text As String, oldText As String, newText As String, Optional charCount)
+Function XSUBSTITUTESUFFIX(text As String, oldText As String, newText As String, Optional charCount)
 '   Purpose: Substitute a trailing symbol
 '   Feature: By default leading 3 characters are considered if not specified
 '   Updated: 2022FEB23
@@ -29,3 +29,4 @@ Public Function XSUBSTITUTESUFFIX(text As String, oldText As String, newText As 
     XSUBSTITUTESUFFIX = Trim(text)
 
 End Function
+

@@ -1,8 +1,9 @@
-Sub InsertWorkdone()
+Sub InsertWorkdone(control As IRibbonControl)
 '   Purpose: Insert customised legend for workdone
 '   Updated: 2022FEB25
 
 '   Saves workbook before macro changes
+    Application.ScreenUpdating = False
     On Error GoTo ErrorHandler
     ActiveWorkbook.Save
 
@@ -24,7 +25,10 @@ Sub InsertWorkdone()
     rng.Offset(3, 0).Characters(1, 2).Font.Bold = True
     rng.Offset(4, 0).Characters(1, 2).Font.Bold = True
     
+    Application.ScreenUpdating = True
+    
 ErrorHandler:
     Exit Sub
 
 End Sub
+

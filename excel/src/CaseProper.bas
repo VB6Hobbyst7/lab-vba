@@ -1,4 +1,4 @@
-Sub CaseProper()
+Sub CaseProper(control As IRibbonControl)
 '   Purpose: Set upper case on selection
 '   Updated: 2022FEB25
 
@@ -8,11 +8,12 @@ Sub CaseProper()
 
     Dim rng As Range
     Set rng = Selection
-    For Each Cell In rng
-        Cell.Value = StrConv(Cell, vbProperCase)
-    Next Cell
+    For Each cell In rng
+        cell.Value = StrConv(cell, vbProperCase)
+    Next cell
     
 ErrorHandler:
     Exit Sub
 
 End Sub
+

@@ -1,5 +1,5 @@
-Public Function XSHEETNAME(rCell As Range, Optional UseAsRef As Boolean) As String
-'	Purpose: Return sheet name of a cell
+Function XSHEETNAME(rCell As Range, Optional UseAsRef As Boolean) As String
+'   Purpose: Return sheet name of a cell
 '   Updated: 2022FEB23
 
 '   Saves workbook before macro changes
@@ -13,3 +13,4 @@ Public Function XSHEETNAME(rCell As Range, Optional UseAsRef As Boolean) As Stri
     End If
 
 End Function
+

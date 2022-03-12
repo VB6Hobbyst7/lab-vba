@@ -1,4 +1,4 @@
-Public Function XGETPAGENUMBER(CurrentCell As Range) As String
+Function XGETPAGENUMBER(CurrentCell As Range) As String
 '   Purpose: Return page number of a cell
 '   Updated: 2022FEB23
 
@@ -31,3 +31,4 @@ Public Function XGETPAGENUMBER(CurrentCell As Range) As String
     XGETPAGENUMBER = NumPage
 
 End Function
+

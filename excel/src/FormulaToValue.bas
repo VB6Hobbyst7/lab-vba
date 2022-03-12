@@ -1,4 +1,4 @@
-Sub FormulaToValue()
+Sub FormulaToValue(control As IRibbonControl)
 '   Purpose: Convert selected formulas to values
 '   Updated: 2022FEB25
 
@@ -17,3 +17,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

@@ -1,8 +1,9 @@
-Sub InsertColumnWidth()
+Sub InsertColumnWidth(control As IRibbonControl)
 '   Purpose: Insert column width counter
 '   Updated: 2022FEB25
 
 '   Saves workbook before macro changes
+    Application.ScreenUpdating = False
     On Error GoTo ErrorHandler
     ActiveWorkbook.Save
     
@@ -16,8 +17,10 @@ Sub InsertColumnWidth()
         c.HorizontalAlignment = xlRight
         c.NumberFormat = "_(#,##0.0_);_((#,##0.0);_(""-""??_);_(@_)"
     Next c
-
+    Application.ScreenUpdating = True
+    
 ErrorHandler:
     Exit Sub
 
 End Sub
+

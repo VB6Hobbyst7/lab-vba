@@ -1,4 +1,4 @@
-Sub SheetColumnsFS()
+Sub SheetColumnsFS(control As IRibbonControl)
 '   Purpose: Standardise columns width for specific worksheet: BS/PL tab
 '   Updated: 2022FEB25
 
@@ -8,21 +8,21 @@ Sub SheetColumnsFS()
 
     Dim ws As Worksheet
     Set ws = ActiveSheet
-    Columns.COLUMNWIDTH = 14
-    Columns("A").COLUMNWIDTH = 3
-    Columns("B").COLUMNWIDTH = 1
-    Columns("C").COLUMNWIDTH = 28
-    Columns("D").COLUMNWIDTH = 4
-    Columns("E").COLUMNWIDTH = 11
-    Columns("F").COLUMNWIDTH = 1
-    Columns("G").COLUMNWIDTH = 11
-    Columns("H").COLUMNWIDTH = 1
-    Columns("I").COLUMNWIDTH = 11
-    Columns("J").COLUMNWIDTH = 1
-    Columns("K").COLUMNWIDTH = 11
-    Columns("L").COLUMNWIDTH = 1
-    Columns("M").COLUMNWIDTH = 1
-    Columns("N").COLUMNWIDTH = 1
+    Columns.ColumnWidth = 14
+    Columns("A").ColumnWidth = 3
+    Columns("B").ColumnWidth = 1
+    Columns("C").ColumnWidth = 28
+    Columns("D").ColumnWidth = 4
+    Columns("E").ColumnWidth = 11
+    Columns("F").ColumnWidth = 1
+    Columns("G").ColumnWidth = 11
+    Columns("H").ColumnWidth = 1
+    Columns("I").ColumnWidth = 11
+    Columns("J").ColumnWidth = 1
+    Columns("K").ColumnWidth = 11
+    Columns("L").ColumnWidth = 1
+    Columns("M").ColumnWidth = 1
+    Columns("N").ColumnWidth = 1
     Columns("M").Interior.Color = RGB(217, 217, 217)
     Columns("A:L").Font.Name = "Times New Roman"
     Columns("A:L").Font.Size = 10
@@ -53,3 +53,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

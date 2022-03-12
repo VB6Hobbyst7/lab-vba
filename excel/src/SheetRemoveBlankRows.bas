@@ -1,8 +1,6 @@
-Sub SheetRemoveBlankRows()
+Sub SheetRemoveBlankRows(control As IRibbonControl)
 '   Purpose: Remove blank rows in sheet
 '   Reference: https://www.ablebits.com/office-addins-blog/2018/12/19/delete-blank-lines-excel/
-'   Modification: 
-'   - Set SourceRange to used range in active sheet
 '   Updated: 2022FEB25
 
 '   Saves workbook before macro changes
@@ -31,3 +29,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

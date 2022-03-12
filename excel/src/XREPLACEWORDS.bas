@@ -1,4 +1,4 @@
-Public Function XREPLACEWORDS(strSource As String, strFind As Range, strReplace As Range)
+Function XREPLACEWORDS(strSource As String, strFind As Range, strReplace As Range)
 '   Purpose: Replace strictly words in a text with boundary based on wordlists
 '   Usage: =XREPLACEWORDS(targetcell, searchlist, replacelist)
 '   Example: =XREPLACEWORDS(A1, B1:B5, C1:C5)
@@ -26,3 +26,4 @@ Public Function XREPLACEWORDS(strSource As String, strFind As Range, strReplace 
     XREPLACEWORDS = Trim(strSource)
     
 End Function
+

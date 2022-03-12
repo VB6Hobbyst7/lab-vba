@@ -1,4 +1,4 @@
-Sub ColorBordersOuter()
+Sub ColorBordersOuter(control As IRibbonControl)
 '   Purpose: Change Border Colors without affecting thickness/styles
 '   Reference: www.TheSpreadsheetGuru.com/the-code-vault
 '   Updated: 2022FEB25
@@ -19,3 +19,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

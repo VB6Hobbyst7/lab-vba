@@ -1,5 +1,5 @@
-Sub SetPrintMargin()
-' 	Purpose: Set print margins
+Sub SetPrintMargin(control As IRibbonControl)
+'   Purpose: Set print margins
 '   Updated: 2022FEB25
 
 '   Saves workbook before macro changes
@@ -35,3 +35,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

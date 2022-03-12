@@ -1,4 +1,4 @@
-Sub SortRight()
+Sub SortRight(control As IRibbonControl)
 '   Purpose: Sort a series of numbers from left to right
 '   Updated: 2022FEB25
 
@@ -16,3 +16,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

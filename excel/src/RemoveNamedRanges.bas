@@ -1,4 +1,4 @@
-Sub RemoveNamedRanges()
+Sub RemoveNamedRanges(control As IRibbonControl)
 '   Purpose: Delete all named ranges
 '   Updated: 2022FEB25
 
@@ -18,3 +18,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

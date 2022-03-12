@@ -1,4 +1,4 @@
-Sub FormatTextToValue()
+Sub FormatTextToValue(control As IRibbonControl)
 '   Purpose: Convert text format to number format on selected range
 '   Updated: 2022FEB25
 
@@ -22,3 +22,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

@@ -1,8 +1,8 @@
-Public Function XSUBSTITUTEMULTIPLE(text As String, old_text As Range, new_text As Variant)
-'	Purpose: Substitute multiple values, including symbols, in a text without boundary
-'	Usage: =XSUBSTITUTEMULTIPLE(A1, B1:B10, C1:C10)
-'	Usage: =XSUBSTITUTEMULTIPLE(A1, B1:B10, C1)
-'	Feature: Faster than REPLACEWORDS
+Function XSUBSTITUTEMULTIPLE(text As String, old_text As Range, new_text As Variant)
+'   Purpose: Substitute multiple values, including symbols, in a text without boundary
+'   Usage: =XSUBSTITUTEMULTIPLE(A1, B1:B10, C1:C10)
+'   Usage: =XSUBSTITUTEMULTIPLE(A1, B1:B10, C1)
+'   Feature: Faster than REPLACEWORDS
 '   Updated: 2022FEB23
 
 '   Saves workbook before macro changes
@@ -21,3 +21,4 @@ Public Function XSUBSTITUTEMULTIPLE(text As String, old_text As Range, new_text 
     XSUBSTITUTEMULTIPLE = Trim(text)
 
 End Function
+

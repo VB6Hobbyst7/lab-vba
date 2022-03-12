@@ -1,4 +1,4 @@
-Sub SheetResetComments()
+Sub SheetResetComments(control As IRibbonControl)
 '   Purpose: Reset position of comments
 '   Updated: 2022FEB25
 
@@ -16,3 +16,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

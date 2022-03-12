@@ -1,4 +1,4 @@
-Sub FormulaReverseSign()
+Sub FormulaReverseSign(control As IRibbonControl)
 '   Purpose: Reverse the sign of selected range
 '   Updated: 2022FEB25
 
@@ -30,3 +30,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

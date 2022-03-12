@@ -1,4 +1,4 @@
-Sub FormatColorRed()
+Sub FormatColorRed(control As IRibbonControl)
 '   Purpose: To highlight range for follow-up
 '   Updated: 2022FEB25
 
@@ -15,3 +15,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

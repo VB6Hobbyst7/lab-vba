@@ -1,4 +1,4 @@
-Sub FormatDateShort()
+Sub FormatDateShort(control As IRibbonControl)
 '   Purpose: Set date format on selected range
 '   Updated: 2022FEB25
 
@@ -21,3 +21,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

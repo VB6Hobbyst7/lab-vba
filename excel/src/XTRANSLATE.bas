@@ -1,4 +1,4 @@
-Public Function XTRANSLATE(strInput As String, strFromSourceLanguage As String, strToTargetLanguage As String) As String
+Function XTRANSLATE(strInput As String, strFromSourceLanguage As String, strToTargetLanguage As String) As String
 '   Purpose: Translate with Google Translate
 '   Reference: https://www.youtube.com/watch?v=RsyqqzholVk&ab_channel=DineshKumarTakyar
 '   Usage: = Translate(Range("A2"), "en", "es")
@@ -48,3 +48,4 @@ Public Function XTRANSLATE(strInput As String, strFromSourceLanguage As String, 
     Set objHTTP = Nothing
     
 End Function
+

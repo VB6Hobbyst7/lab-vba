@@ -1,14 +1,13 @@
-Sub InsertHeadingAudit()
+Sub InsertHeadingAudit(control As IRibbonControl)
 '   Purpose: Insert customised headings for audit workpapers
 '   Note: Utilises CCH Engagement functions
 '   Updated: 2022FEB25
 
 '   Saves workbook before macro changes
+    Application.ScreenUpdating = False
     On Error GoTo ErrorHandler
     ActiveWorkbook.Save
-
-    Application.ScreenUpdating = False
-
+    
     Dim rng As Range
     Dim myClient As String
     Dim myYear As String
@@ -43,10 +42,11 @@ Sub InsertHeadingAudit()
     
     rng.Font.Bold = True
     rng.Offset(1, 0).Font.Bold = True
-
+    
     Application.ScreenUpdating = True
-
+    
 ErrorHandler:
     Exit Sub
 
 End Sub
+

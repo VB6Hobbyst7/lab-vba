@@ -1,4 +1,4 @@
-Sub SortSheet()
+Sub SortSheet(control As IRibbonControl)
 '   Purpose: Sort worksheets alphabetically
 '   Updated: 2022FEB25
 
@@ -21,3 +21,4 @@ ErrorHandler:
     Exit Sub
 
 End Sub
+

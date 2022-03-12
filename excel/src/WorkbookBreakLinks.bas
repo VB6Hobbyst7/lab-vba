@@ -1,9 +1,10 @@
-Sub WorkbookBreakLinks()
+Sub WorkbookBreakLinks(control As IRibbonControl)
 '   Purpose: Break all external links
 '   Reference: https://www.extendoffice.com/documents/excel/1173-excel-break-all-links.html
 '   Updated: 2022FEB25
 
 '   Saves workbook before macro changes
+    Application.ScreenUpdating = False
     On Error GoTo ErrorHandler
     ActiveWorkbook.Save
     
@@ -28,8 +29,10 @@ Sub WorkbookBreakLinks()
     'For x = 1 To UBound(ExternalLinks)
     '    wb.BreakLink Name:=ExternalLinks(x), Type:=xlLinkTypeExcelLinks
     'Next x
-
+    Application.ScreenUpdating = True
+    
 ErrorHandler:
     Exit Sub
 
 End Sub
+
