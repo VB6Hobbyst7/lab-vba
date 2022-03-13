@@ -1,4 +1,4 @@
-Private Function HYPERACTIVE(ByRef rng As Range)
+Private Function XHYPERACTIVE(ByRef rng As Range)
 '   Purpose: To create hyperlink based on selected cell
 '   Note: Passive function to be activated by InsertCrossReference()
 

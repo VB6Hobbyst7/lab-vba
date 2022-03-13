@@ -1,4 +1,4 @@
-Sub KillTheHyperlinksInAllOpenDocuments()
+Sub KillTheHyperlinksInAllOpenDocuments(control As IRibbonControl)
 '   Purpose: Removes all hyperlinks from all opened document
 
     Dim doc As Document
@@ -15,3 +15,4 @@ Sub KillTheHyperlinksInAllOpenDocuments()
     Next doc
     
 End Sub
+

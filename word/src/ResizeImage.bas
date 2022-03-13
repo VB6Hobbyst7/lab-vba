@@ -1,4 +1,4 @@
-Sub ResizeImage()
+Sub ResizeImage(control As IRibbonControl)
 '   Purpose: Resize selected image
 '   Source: https://www.extendoffice.com/documents/word/1207-word-resize-all-multiple-images.html
 

@@ -1,6 +1,8 @@
-Sub InsertReference()
+Sub InsertReference(control As IRibbonControl)
 '   Purpose: Paste clipboard content as hyperlink
 '   References: https://www.slipstick.com/developer/code-samples/paste-clipboard-contents-vba/
+'   Notes:
+'   - https://excel-macro.tutorialhorizon.com/vba-excel-reference-libraries-in-excel-workbook/
 
     Dim DataObj As MSForms.DataObject
     Set DataObj = New MSForms.DataObject
@@ -30,3 +32,4 @@ Sub InsertReference()
     Application.ScreenUpdating = True
     
 End Sub
+

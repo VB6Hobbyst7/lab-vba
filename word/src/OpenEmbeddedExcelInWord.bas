@@ -1,4 +1,4 @@
-Sub OpenEmbeddedExcelInWord()
+Sub OpenEmbeddedExcelInWord(control As IRibbonControl)
 '   Purpose: Remove LockAspectRatio from linked Excel objects
 
     Dim shp As InlineShape
@@ -11,3 +11,4 @@ Sub OpenEmbeddedExcelInWord()
     Next shp
     
 End Sub
+

@@ -1,6 +1,7 @@
-Sub SetTablesMargin(varPadding As Double)
+Sub SetTablesMargin(control As IRibbonControl, varPadding As Double)
 '   Purpose: Standardise all table paddings in a document
 '   varPadding: Measured in centimeters
+'   Notes:
 
     Application.ScreenUpdating = False
     
@@ -18,3 +19,4 @@ Sub SetTablesMargin(varPadding As Double)
     Application.ScreenRefresh
     
 End Sub
+

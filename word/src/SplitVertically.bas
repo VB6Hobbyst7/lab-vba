@@ -1,4 +1,4 @@
-Sub SplitVertically()
+Sub SplitVertically(control As IRibbonControl)
 '   Purpose: Split WORD active window vertically to view side by side
 '   Source: https://dharma-records.buddhasasana.net/computing/ms-word-split-windows-vertically
  
@@ -100,3 +100,4 @@ Sub SplitVertically()
 TheEnd:
          
 End Sub
+

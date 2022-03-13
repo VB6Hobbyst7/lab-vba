@@ -3,13 +3,14 @@ Function XSPELLNUMBER(ByVal MyNumber)
 '   Source: https://support.microsoft.com/en-us/office/convert-numbers-into-words-a0d166fb-e1ea-4090-95c8-69442cd55d98
 '   Reference: https://stackoverflow.com/questions/11155912/how-to-make-vba-function-vba-only-and-disable-it-as-udf/41130822
 '   Modification:
-'   - Made private GetHundreds, GetTens. Users do not need to access these.
+'   - Made private XGETHUNDREDS, XGETTENS. Users do not need to access these.
 '   - Added "Only" to the end of result.
 '   - Fixed additional spacing between words in the original code.
 '   - Fixed 0.XX appearing as "No Dollar and XX Cents" to "XX Cents Only"
 '   Updated: 2022FEB23
 
 '   Saves workbook before macro changes
+    Application.ScreenUpdating = False
     ActiveWorkbook.Save
     
     Dim Dollars, Cents, Temp
@@ -29,13 +30,13 @@ Function XSPELLNUMBER(ByVal MyNumber)
     
 '   Convert cents and set MyNumber to dollar amount
     If DecimalPlace > 0 Then
-        Cents = GetTens(Left(Mid(MyNumber, DecimalPlace + 1) & "00", 2))
+        Cents = XGETTENS(Left(Mid(MyNumber, DecimalPlace + 1) & "00", 2))
         MyNumber = Trim(Left(MyNumber, DecimalPlace - 1))
     End If
     
     Count = 1
     Do While MyNumber <> ""
-        Temp = GetHundreds(Right(MyNumber, 3))
+        Temp = XGETHUNDREDS(Right(MyNumber, 3))
         If Temp <> "" Then Dollars = Temp & Place(Count) & Dollars
             If Len(MyNumber) > 3 Then
                 MyNumber = Left(MyNumber, Len(MyNumber) - 3)
@@ -64,6 +65,7 @@ Function XSPELLNUMBER(ByVal MyNumber)
     Else
         XSPELLNUMBER = Trim(Replace(Dollars & Cents, "  ", " "))
     End If
+    Application.ScreenUpdating = True
 
 End Function
 

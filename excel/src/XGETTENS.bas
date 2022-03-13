@@ -1,4 +1,4 @@
-Private Function GetTens(TensText)
+Private Function XGETTENS(TensText)
 '   Purpose: Converts a number from 10 to 99 into text.
  
     Dim result As String
@@ -35,10 +35,10 @@ Private Function GetTens(TensText)
             Case Else
         End Select
 '   Retrieve ones place.
-        result = result & " " & GetDigit(Right(TensText, 1))
+        result = result & " " & XGETDIGIT(Right(TensText, 1))
     End If
   
-    GetTens = result
+    XGETTENS = result
  
 End Function
 

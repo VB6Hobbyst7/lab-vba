@@ -1,4 +1,4 @@
-Sub SetPageLayout()
+Sub SetPageLayout(control As IRibbonControl)
 '   Purpose: Set page margin and edge distance
 
     With ActiveDocument.PageSetup
@@ -13,3 +13,4 @@ Sub SetPageLayout()
     End With
 
 End Sub
+

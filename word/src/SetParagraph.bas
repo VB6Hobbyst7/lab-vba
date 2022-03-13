@@ -1,4 +1,4 @@
-Sub SetParagraph()
+Sub SetParagraph(control As IRibbonControl)
 '   Purpose: Set paragraph spacing
 
     Selection.WholeStory
@@ -30,3 +30,4 @@ Sub SetParagraph()
     End With
   
 End Sub
+

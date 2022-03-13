@@ -6,7 +6,7 @@ Sub InsertCrossReference(control As IRibbonControl)
     On Error GoTo ErrorHandler
     ActiveWorkbook.Save
 
-    Call HYPERACTIVE(Selection)
+    Call XHYPERACTIVE(Selection)
     
 ErrorHandler:
     Exit Sub

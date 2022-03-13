@@ -1,4 +1,4 @@
-Sub EditLinks()
+Sub EditLinks(control As IRibbonControl)
 '   Purpose: Edit hyperlinks
 '   Reference: https://stackoverflow.com/questions/3355266/how-to-programmatically-edit-all-hyperlinks-in-a-word-document
 '   Reference: http://msdn.microsoft.com/en-us/library/microsoft.office.interop.word.hyperlink_members.aspx
@@ -13,6 +13,7 @@ Sub EditLinks()
         Selection.Hyperlinks(i).TextToDisplay = "[" & Selection.Hyperlinks(i).TextToDisplay & "]"
     Next
     
-    CopyHyperlink
+    Call CopyHyperlink(control)
     
 End Sub
+

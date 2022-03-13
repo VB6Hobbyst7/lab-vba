@@ -1,4 +1,4 @@
-Sub ResetObject()
+Sub ResetObject(control As IRibbonControl)
 '   Purpose: Reset WorkbookObject sizes
 
     Dim shp As InlineShape
@@ -11,3 +11,4 @@ Sub ResetObject()
     Next shp
     
 End Sub
+

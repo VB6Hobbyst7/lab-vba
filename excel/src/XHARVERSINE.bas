@@ -1,4 +1,4 @@
-Private Function Haversine(Lat1 As Variant, Lon1 As Variant, Lat2 As Variant, Lon2 As Variant)
+Private Function XHARVERSINE(Lat1 As Variant, Lon1 As Variant, Lat2 As Variant, Lon2 As Variant)
  '  Purpose: Great Circle Distance calculation
  '  Note: Returns results in kilometers
 
@@ -13,7 +13,7 @@ Private Function Haversine(Lat1 As Variant, Lon1 As Variant, Lat2 As Variant, Lo
     A = Sin(dlat / 2) * Sin(dlat / 2) + Cos(Rad1) * Cos(Rad2) * Sin(dlon / 2) * Sin(dlon / 2)
     c = 2 * Excel.WorksheetFunction.Atan2(Sqr(1 - A), Sqr(A))
     d = R * c
-    Haversine = d
+    XHARVERSINE = d
     
 End Function
 

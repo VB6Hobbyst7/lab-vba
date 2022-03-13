@@ -1,4 +1,4 @@
-Sub SetTablesBordersColor(varColor As Long)
+Sub SetTablesBordersColor(control As IRibbonControl, varColor As Long)
 '   Purpose: Standardise all table borders color in a document at 1/2 pt single-line
 
     Application.ScreenUpdating = False
@@ -17,3 +17,4 @@ Sub SetTablesBordersColor(varColor As Long)
     Application.ScreenRefresh
 
 End Sub
+

@@ -17,7 +17,7 @@ Function XGCDISTANCE(textQuery As Range, varTarget As Range, varDictionary As Ra
         If varDictionary.Cells(i, 1).Value = textQuery Then
             cLat = varDictionary.Cells(i, 2)
             cLon = varDictionary.Cells(i, 3)
-            trackResult = Haversine(varTarget.Cells(1, 1), varTarget.Cells(1, 2), cLat, cLon)
+            trackResult = XHARVERSINE(varTarget.Cells(1, 1), varTarget.Cells(1, 2), cLat, cLon)
             If result = 0 Then result = trackResult
             If trackResult < result Then result = trackResult
         End If

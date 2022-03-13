@@ -1,4 +1,4 @@
-Sub RemoveContentControl()
+Sub RemoveContentControl(control As IRibbonControl)
 '   Purpose: Remove all content controls
     
     Dim oRng As Range
@@ -24,3 +24,4 @@ Sub RemoveContentControl()
     Next
     
 End Sub
+

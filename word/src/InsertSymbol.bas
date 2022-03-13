@@ -1,4 +1,4 @@
-Sub InsertSymbol()
+Sub InsertSymbol(control As IRibbonControl)
 '   Purpose: Insert symbol for reference
 
     Application.ScreenUpdating = False
@@ -6,3 +6,4 @@ Sub InsertSymbol()
     Application.ScreenUpdating = True
         
 End Sub
+

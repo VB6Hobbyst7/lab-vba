@@ -1,4 +1,4 @@
-Sub KillTheHyperlinks()
+Sub KillTheHyperlinks(control As IRibbonControl)
 '   Purpose: Removes all hyperlinks from the document
 
     With ThisDocument
@@ -9,3 +9,4 @@ Sub KillTheHyperlinks()
     Application.Options.AutoFormatAsYouTypeReplaceHyperlinks = False
     
 End Sub
+

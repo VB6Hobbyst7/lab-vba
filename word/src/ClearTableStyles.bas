@@ -1,4 +1,4 @@
-Sub ClearTableStyles()
+Sub ClearTableStyles(control As IRibbonControl)
 '   Purpose: Clear table styles
 
     Dim objTable As Table
@@ -17,3 +17,4 @@ Sub ClearTableStyles()
     Set objDoc = Nothing
   
 End Sub
+

@@ -1,4 +1,4 @@
-Sub RemoveCrossReferences()
+Sub RemoveCrossReferences(control As IRibbonControl)
 '   Purpose: Remove all cross-references
 
     Dim fld As Field
@@ -9,3 +9,4 @@ Sub RemoveCrossReferences()
     Next
  
 End Sub
+

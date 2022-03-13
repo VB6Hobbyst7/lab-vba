@@ -1,4 +1,4 @@
-Sub StyleKill()
+Sub StyleKill(control As IRibbonControl)
 '   Purpose: Delete unwanted styles
 '   Source: https://word.tips.net/T001337_Removing_Unused_Styles.html
 
@@ -10,4 +10,5 @@ Sub StyleKill()
         End If
     Next oStyle
      
- End Sub
+End Sub
+

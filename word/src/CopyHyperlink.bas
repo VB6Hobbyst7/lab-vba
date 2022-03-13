@@ -1,4 +1,4 @@
-Sub CopyHyperlink()
+Sub CopyHyperlink(control As IRibbonControl)
 '   Purpose: Copy hyperlinks
 '   Reference: https://www.msofficeforums.com/word-vba/38223-how-extract-selected-hyperlink-address-clipboard.html
 '   Reference: https://software-solutions-online.com/word-vba-move-cursor-to-end-of-document/
@@ -26,7 +26,7 @@ Sub CopyHyperlink()
     Dim inputWord As Variant
     Dim i As Long
     Dim insertPos As Range
-    Set insertPos = ActiveDocument.Range
+    Set insertPos = Selection.Range
     
     ReDim results(Selection.Hyperlinks.Count)
     For i = 1 To Selection.Hyperlinks.Count
@@ -39,3 +39,4 @@ Sub CopyHyperlink()
     Next
      
 End Sub
+

@@ -21,7 +21,7 @@ Private Function GetUTCTimeDate() As Date
     http.Open "GET", NetTime & Now(), False, "", ""
     http.send
     
-    UTCDateTime = http.getResponseHeader("Date")
+    UTCDateTime = http.GetResponseHeader("Date")
     UTCDate = Mid(UTCDateTime, InStr(UTCDateTime, ",") + 2)
     UTCDate = Left(UTCDate, InStrRev(UTCDate, " ") - 1)
     UTCTime = Mid(UTCDate, InStrRev(UTCDate, " ") + 1)
@@ -30,3 +30,4 @@ Private Function GetUTCTimeDate() As Date
     On Error GoTo 0
 
 End Function
+

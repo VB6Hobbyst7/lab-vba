@@ -1,4 +1,4 @@
-Private Function GetHundreds(ByVal MyNumber)
+Private Function XGETHUNDREDS(ByVal MyNumber)
 '   Purpose: Converts a number from 100-999 into text
 
     Dim result As String
@@ -8,17 +8,17 @@ Private Function GetHundreds(ByVal MyNumber)
     
 '   Convert the hundreds place.
     If Mid(MyNumber, 1, 1) <> "0" Then
-        result = GetDigit(Mid(MyNumber, 1, 1)) & " Hundred "
+        result = XGETDIGIT(Mid(MyNumber, 1, 1)) & " Hundred "
     End If
     
 '   Convert the tens and ones place.
     If Mid(MyNumber, 2, 1) <> "0" Then
-        result = result & GetTens(Mid(MyNumber, 2))
+        result = result & XGETTENS(Mid(MyNumber, 2))
     Else
-        result = result & GetDigit(Mid(MyNumber, 3))
+        result = result & XGETDIGIT(Mid(MyNumber, 3))
     End If
     
-    GetHundreds = result
+    XGETHUNDREDS = result
 
 End Function
 
