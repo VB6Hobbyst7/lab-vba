@@ -3,9 +3,9 @@
 
 CustomUI Ribbon Template provides a simple starting point to implement customised Excel ribbon. 
 
-<img src="../assets/img-customuiribbon-100.gif" width="60%" height="60%">
+<img src="../excel/img/img-customuiribbon-r100.gif" width="60%" height="60%">
 
-- Download [CustomUI Ribbon Template v1.0.0](../excel/customuiribbon-t100.xlam)  
+- Download [CustomUI Ribbon Template v1.0.0](../excel/rel/customuiribbon-t100.xlam)  
 - Read/Write embedded XML file with [Office RibbonX Editor](https://github.com/fernandreu/office-ribbonx-editor)
 
 ## Documentation[<sup>·</sup>]
@@ -227,6 +227,6 @@ CustomUI Ribbon Template provides a simple starting point to implement customise
 ---
 <sup>[Addins] > [CustomUI Ribbon Template]</sup>
 
-[Addins]: https://github.com/ry4nyeo/addins
-[CustomUI Ribbon Template]: ../assets/pgs-customuiribbon-100.md
+[Addins]: https://github.com/ry4nyeo/excel
+[CustomUI Ribbon Template]: ../excel/pgs-customuiribbon.md
 [<sup>·</sup>]: #
